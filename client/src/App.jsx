@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
-import Signup from "./signup";
-import Login from "./components/login";
+import Signup from "./Signup";
+import Login from "./Components/login";
 import Dashboard from "./Dashboard";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -58,7 +58,7 @@ const sendMessage = async () => {
         </div>
       </nav>
       <Signup />
-      <Login/>
+      
 
       <section id="home" className="home">
         <h1>Hello, I'm Prachi 👋</h1>
