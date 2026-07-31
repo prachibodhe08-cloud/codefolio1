@@ -11,7 +11,7 @@ function Login() {
     alert("Button clicked");
 
     try {
-      const response = await fetch("http://localhost:5000/login", {
+      const response = await fetch("https://codefolio1.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -27,8 +27,8 @@ function Login() {
       alert(data.message);
 
       if (data.message) {
-  navigate("/dashboard");
-}
+        navigate("/dashboard");
+      }
 
     } catch (error) {
       alert(error.message);
@@ -37,7 +37,6 @@ function Login() {
 
   return (
     <div className="auth-container">
-
       <div className="auth-card">
 
         <h1>Login</h1>
@@ -59,7 +58,6 @@ function Login() {
         </button>
 
       </div>
-
     </div>
   );
 }
